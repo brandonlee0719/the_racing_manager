@@ -1,0 +1,24 @@
+.search-input {
+  $icon-margin-top: 0;
+
+  position: relative;
+  width: 100%;
+
+  input::placeholder {
+    text-transform: uppercase;
+    font-size: $micro-title;
+  }
+
+  input {
+    padding-right: 25px;
+    padding-left: 0;
+  }
+
+  &__glass {
+    margin-top: $icon-margin-top;
+    z-index: 1;
+    cursor: initial;
+    left: initial;
+    right: 0;
+  }
+}

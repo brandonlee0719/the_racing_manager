@@ -1,0 +1,14 @@
+a,
+.link {
+  text-decoration: none;
+  color: $cta-link-color;
+
+  &--no-color {
+    color: initial;
+  }
+
+  &--italic {
+    font-style: italic;
+    text-transform: uppercase;
+  }
+}

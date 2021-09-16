@@ -1,0 +1,19 @@
+.side-panel {
+  position: relative;
+  width: 100%;
+  background: $color-bg-faded-dark;
+
+  &__list {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+
+    @media all and (min-width: $screen-sm-min) {
+      padding: 20px;
+    }
+
+    @media all and (min-width: $screen-md-min) {
+      padding: 45px 40px;
+    }
+  } 
+}

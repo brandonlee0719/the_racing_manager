@@ -1,0 +1,21 @@
+.title-description {
+  position: relative;
+  width: 100%;
+
+  &__paragraph,
+  &__title {
+    position: relative;
+  }
+
+  &__content {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  &--edit {
+    .title-description__title,
+    .title-description__seperator {
+      opacity: 0.1;
+    }
+  }
+}

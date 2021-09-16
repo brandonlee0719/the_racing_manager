@@ -1,0 +1,21 @@
+$featured-card-max-width: 300px;
+
+.featured-card {
+  &__section-bg {
+    background: $color-bg-secondary;
+  }
+
+  &__section {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+  }
+
+  &--sm {
+    .featured-card__section {
+      position: relative;
+      width: 100%;
+      padding: 8.5px 15px;
+    }    
+  }
+}

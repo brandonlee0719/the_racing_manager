@@ -1,0 +1,12 @@
+.input-error {
+  color: $placeholder-color;
+  @include unTruncate();
+
+  @media (min-width: $screen-md) {
+    font-size: $micro-text;
+  }
+
+  span {
+    color: inherit;
+  }
+}

@@ -1,0 +1,211 @@
+/**
+ *  Variables
+ */
+$title: 45px;
+$title-lead: 45px;
+
+$subtitle: 25px;
+$subtitle-xs: 16px;
+$subtitle-lead: 27px;
+
+$minor-title: 18px;
+$minor-title-lead: 20px;
+
+$small-title: 16px;
+$small-title-lead: 22px;
+$text: $small-title;
+$text-lead: $small-title-lead;
+$text-xs: 14px;
+
+$tiny-title: 14px;
+$tiny-title-lead: 20px;
+$tiny-text: $tiny-title;
+$tiny-text-lead: $tiny-title-lead;
+
+$micro-title: 12px;
+$micro-title-lead: 18px;
+$micro-text: $micro-title;
+$micro-text-lead: 14px;
+
+$nano-title: 10px;
+$nano-title-lead: 14px;
+$nano-text: $nano-title;
+$nano-text-lead: $nano-title-lead;
+
+$extra-light: 200;
+$regular: 400;
+$semi-bold: 600;
+
+/**
+ *  Font weights
+ */
+@mixin extra-light-weight () {
+  font-weight: $extra-light;
+}
+
+@mixin regular-weight () {
+  font-weight: $regular;
+}
+
+@mixin semi-bold-weight () {
+  font-weight: $semi-bold;
+}
+
+/**
+ *  Font families
+ */
+@mixin primary-font-family () {
+  font-family: $font-family-base;
+}
+
+@mixin secondary-font-family () {
+  font-family: $font-family-secondary;
+}
+
+/**
+ *  Fonts
+ */
+h1, h2, h3, h4, h5, h6, p, a, span {
+  color: black;
+  margin: 0;
+
+  &.extra-light {
+    // font-weight: 200;
+    @include extra-light-weight();
+  }
+  &.regular {
+    @include regular-weight();
+    // font-weight: 400;
+  }
+  &.semi-bold {
+    @include semi-bold-weight();
+    // font-weight: 600;
+  }
+  &.secondary-font {
+    @include secondary-font-family();
+    // font-family: $font-family-secondary;
+  }
+  &.italic {
+    font-style: italic;
+  }
+  &.inherit {
+    color: inherit;
+  }
+}
+
+@mixin h1 () {
+  @include primary-font-family();
+  @include regular-weight();
+
+  font-size: $subtitle;
+  line-height: $title-lead;
+  @media (min-width: $screen-md) {
+    font-size: $title;
+  }
+}
+
+h1 {
+  @include h1();
+}
+
+@mixin h2 () {
+  @include primary-font-family();
+  @include regular-weight();
+
+  font-size: $subtitle-xs;
+  line-height: $subtitle-lead;
+  @media (min-width: $screen-md) {
+    font-size: $subtitle;
+  }
+}
+
+h2 {
+  @include h2();
+}
+
+@mixin h3 () {
+  @include primary-font-family();
+  @include regular-weight();
+
+  font-size: $minor-title;
+  line-height: $minor-title-lead;
+}
+
+h3 {
+  @include h3();
+}
+
+@mixin h4 () {
+  @include secondary-font-family();
+  @include semi-bold-weight();
+
+  font-size: $small-title;
+  line-height: $small-title-lead;
+}
+
+h4 {
+  @include h4();
+}
+
+@mixin h5 () {
+  @include secondary-font-family();
+  @include semi-bold-weight();
+
+  font-size: $tiny-title;
+  line-height: $tiny-title-lead;
+}
+
+h5 {
+  @include h5();
+}
+
+@mixin h6 () {
+  @include secondary-font-family();
+
+  font-size: $micro-title;
+  line-height: $micro-title-lead;
+  font-weight: inherit;
+  color: inherit;
+}
+
+h6 {
+  @include h6();
+}
+
+@mixin text () {
+  font-weight: 300;
+  font-family: $font-family-secondary;
+  font-size: $text-xs;
+  line-height: $text-lead;
+  word-wrap: break-word;
+  @media (min-width: $screen-sm) {
+    font-size: $text;
+  }
+}
+
+p, body, ul {
+  @include text();
+}
+
+@mixin fontSizes () {
+  &.small {
+    font-size: $small-title;
+    line-height: $small-title-lead;
+  }
+  &.tiny {
+    font-size: $tiny-text;
+    line-height: $tiny-text-lead;
+  }
+  &.micro {
+    font-size: $micro-text;
+    line-height: $micro-text-lead;
+  }
+  &.nano {
+    font-size: $nano-text;
+    line-height: $nano-text-lead;
+  } 
+}
+
+p, a, i {
+  @include fontSizes();
+}

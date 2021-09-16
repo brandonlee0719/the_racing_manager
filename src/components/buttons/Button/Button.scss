@@ -1,0 +1,16 @@
+.button {
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  &:hover, &:visited, &:active, &:focus {
+    appearance: none;
+    outline: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.button ~ .button {
+  margin-top: 12px;
+}

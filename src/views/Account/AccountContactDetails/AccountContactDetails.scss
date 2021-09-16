@@ -1,0 +1,14 @@
+.account-contact-details {
+  position: relative;
+
+  &__container {
+    position: relative;
+    @include clearfix();
+  }
+  
+  &__section {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

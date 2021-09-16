@@ -1,0 +1,57 @@
+.slider {
+  position: relative;
+  width: 100%;
+
+  &__range {
+
+    .rc-slider-rail {
+      background: rgba($raisin-black, 0.36);
+    }
+
+    .rc-slider-track {
+      background: $space-cadet;
+    }
+
+    .rc-slider-handle {
+      border-radius: 0;
+      border-color: transparent;
+      transform: rotate(-45deg);
+      background: $space-cadet;
+      outline: none;
+      box-shadow: none;
+
+      &:active,
+      &:hover {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__tips {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    @include clearfix();
+  }
+
+  &__tip {
+    position: relative;
+    padding: 5px 15px;
+    background: $space-cadet;
+
+    &--left {
+      float: left;
+    }
+
+    &--right {
+      float: right;
+    }
+
+    h6 {
+      color: $white;
+      font-weight: 100;
+    }
+  }
+}

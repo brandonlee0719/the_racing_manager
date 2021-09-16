@@ -1,0 +1,14 @@
+.parallax-hero {
+  position: relative;
+  
+  &__parallax {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+}

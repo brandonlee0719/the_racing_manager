@@ -1,0 +1,22 @@
+.base-tile {
+  position: relative;
+  transition: transform .2s ease-out;
+
+  
+  &__content {
+    position: relative;
+    background-color: $white;
+    padding-bottom: 100px;
+    min-height: $min-tile-height;
+  }
+
+  &--no-box-shadow {
+    .base-tile__content {
+      box-shadow: none;
+    }
+  }
+
+  &:hover {
+    transform: scale3d(1.01, 1.01, 1.01);
+  }
+}

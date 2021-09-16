@@ -1,0 +1,18 @@
+.account-security-settings {
+  position: relative;
+
+  &__container {
+    position: relative;
+    @include clearfix();
+  }
+  
+  &__section {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__cta-text {
+    padding: 0 40px;
+  }
+}

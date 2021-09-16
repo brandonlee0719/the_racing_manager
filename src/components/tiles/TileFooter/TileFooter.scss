@@ -1,0 +1,38 @@
+.tile-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  padding: 0 10px;
+  height: 40px;
+  display: flex;
+  align-content: center;
+  @include clearfix();
+
+  &__item {
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+
+  &__text {
+    position: relative;
+    display: inline-block;
+    color: $ash-grey;
+  }
+}

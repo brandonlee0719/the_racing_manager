@@ -1,0 +1,59 @@
+.statistics-table {
+  margin: 40px auto;
+
+  a {
+    cursor: pointer;
+  }
+
+  &__variable-height {
+    transition: 0.5s all;
+  }
+
+  td.comment-td {
+    border-bottom: 1px solid #B2B4B5;
+  }
+
+  .comment-content {
+    border-top: 1px dotted #B2B4B5;
+    padding: 10px;
+  }
+
+  .table__cell {
+    font-weight: normal;
+  }
+
+  .timeform-logo {
+    height: 20px;
+    vertical-align: middle;
+  }
+
+  .stats-transition-enter, .stats-transition-leave {
+    position: absolute;
+    padding: 0 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .stats-transition-enter {
+    opacity: 0.01;
+    filter: blur(5px);
+  }
+
+  .stats-transition-enter.stats-transition-enter-active {
+    opacity: 1;
+    filter: blur(0px);
+    transition: opacity 500ms ease-in;
+  }
+
+  .stats-transition-leave {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  .stats-transition-leave.stats-transition-leave-active {
+    opacity: 0.01;
+    filter: blur(5px);
+    transition: all 300ms ease-in;
+  }
+}

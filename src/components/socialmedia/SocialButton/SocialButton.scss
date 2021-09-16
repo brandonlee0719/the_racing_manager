@@ -1,0 +1,49 @@
+.social-button {
+  position: relative;
+  width: 100%;
+  min-height: 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  &--facebook {
+    background-color: $color-facebook;
+  }
+
+  &--twitter {
+    background-color: $color-twitter;
+  }
+
+  &--linked-in {
+    background-color: $color-linked-in;
+  }
+
+  &__icon {
+    display: inline-block;
+    font-size: $minor-title;
+    vertical-align: text-bottom;
+    &:before {
+      color: $white;
+    }
+  }
+
+  &__icon-container {
+    position: relative;
+    width: 30px;
+    padding-right: 15px;
+    border-right: 1px solid $white;
+    text-align: center;
+  }
+
+  &__text{
+    position: relative;
+    padding-left: 15px;
+
+    h6 {
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.account-add-payment-method-card {
+  position: relative;
+
+  &__container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 295px;
+    height: 200px;
+  }
+}

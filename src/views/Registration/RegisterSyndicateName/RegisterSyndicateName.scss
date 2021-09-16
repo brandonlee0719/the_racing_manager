@@ -1,0 +1,64 @@
+.register-syndicate-name {
+
+  .register-syndicate-name_section {
+    .register-syndicate-name-content {
+      .name-description {
+        margin: 35px 0;
+        h2 {
+          color: $yankees-blue;
+        }
+        p {
+          color: $yankees-blue;
+          font-weight: 400;
+        }
+      }
+
+      .name-input-section {
+        margin: 20px 0;
+        input {
+          color: $yankees-blue;
+          font-size: 25px;
+          font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+          text-align: left;
+          padding-bottom: 10px;
+          &::-webkit-input-placeholder {
+            color: #ccc;
+            font-size: 25px;
+            font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .name-footer {
+        text-align: center;
+        padding: 40px 0;
+        .name-submit-button {
+          button {
+            width: auto;
+            padding: 3px 70px;
+          }
+          .comment {
+            margin: 30px 0 50px;
+            font-size: 14px;
+            span {
+              color: #ccc;
+            }
+          }
+        }
+
+        .footer-image {
+          span {
+            font-size: 14px;
+            color: #ccc;
+          }
+          img {
+            width: 145px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+}

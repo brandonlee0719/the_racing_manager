@@ -1,0 +1,25 @@
+.featured-card-frame {
+  $shadow-padding: 5px;
+
+  position: relative;
+  width: 100%;
+  max-width: $featured-card-max-width;
+  padding-bottom: $shadow-padding;
+  padding-right: $shadow-padding;
+
+  // Truncate all text
+  p, h3, h6 {
+    line-height: initial;
+    @include truncate();
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    border-top: 6px solid transparent;
+
+    &--no-border {
+      border: none !important;
+    }
+  }
+}

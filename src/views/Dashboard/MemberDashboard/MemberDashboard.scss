@@ -1,0 +1,66 @@
+.member-dashboard {
+  position: relative;
+
+  &__title {
+    color: $color-text-heading;
+    margin: 40px 10px 25px;
+
+    @media (min-width: $screen-sm-min) {
+      margin: 50px 10px 60px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    width: 100%;
+  }
+
+  &__more-btn {
+    margin: 15px auto;
+    display: block;
+
+    @media (min-width: $screen-sm-min) {
+      margin: 50px auto;
+    }
+  }
+
+  &__message {
+    width: 70%;
+    margin: 40px auto;
+
+    .msg-input {
+      .input-label {
+        width: 55px;
+        padding-right: 10px;
+        float: left;
+        text-align: right;
+        font-weight: 600;
+        h5 {
+          line-height: 33px;
+          font-size: 15px;
+        }
+      }
+      .input {
+        display: inline-block;
+        width: calc(100% - 55px);
+
+        .Select-control {
+          border: none;
+          border-bottom: 1px solid #ccc;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .feed-submit {
+      margin-top: 20px;
+      &__title {
+        display: none;
+      }
+    }
+  }
+
+  &__feed {
+    margin-bottom: 20px;
+  }
+}

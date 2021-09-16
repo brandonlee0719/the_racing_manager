@@ -1,0 +1,115 @@
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 620px;
+  background-color: $yankees-blue;
+  padding: 10px 0 40px 0;
+  transition: height .2s ease-out;
+
+  @media all and (min-width: $screen-sm-min) {
+    padding: 40px 0;
+  }
+
+  &__heading {
+    position: relative;
+    margin-bottom: 20px;
+    @include clearfix();
+
+    @media all and (min-width: $screen-sm-min) {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: $white;
+    }
+  }
+
+  &__header-button {
+    float: right;
+  }
+
+  &__items-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-width: 0 10px;
+    border-style: solid;
+    border-color: transparent;
+
+    @media all and (min-width: $screen-sm-min) {
+      border-width: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__items-list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    padding-top: 30px;
+    overflow: hidden;
+  }
+
+  &__section {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media all and (min-width: $screen-sm-min) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media all and (min-width: $screen-md-min) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__slide-item {
+    display: inline-block;
+  }
+
+  &__arrow {
+    width: 10px;
+    opacity: 0.5;
+
+    @media all and (min-width: $screen-sm-min) {
+      width: 20px;
+    }
+
+    @media all and (min-width: $screen-md-min) {
+      width: 40px;
+    }
+  }
+
+  .nica-carousel__slide {
+    text-align: center;
+    vertical-align: middle;
+    
+    h2 {
+      font-weight: 100;
+      color: $white;
+      opacity: 0.5;
+      transition: opacity .2s ease-out;
+      padding: 0 20px;
+
+      >sup {
+        margin-left: 6px;
+      }
+    }
+    &--active {
+      h2 {
+        font-weight: 400;
+        opacity: 0.75;
+      }
+    }
+  }
+
+  &__pagination {
+    margin-top: 20px;
+  }
+}

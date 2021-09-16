@@ -1,0 +1,157 @@
+.horse-header {
+
+// Image ----------------------------------------
+  &__image {
+    position: relative;
+    background: #eee;
+
+    .parallax-hero__image {
+      height: 200px;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      @media (min-width: $screen-sm) {
+        height: 350px;
+      }
+
+      @media (min-width: $screen-md) {
+        height: 550px;
+      }
+    }
+  }
+
+// Header tile ----------------------------------
+  &__details-container {
+    width: auto;
+
+    @media (min-width: $screen-lg) {
+      position: absolute;
+      width: 1170px;
+      height: 100%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__details-tile {
+    min-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 2;
+    transform: translateY(-50%);
+    background: white;
+    padding: 10px 0 30px;
+  }
+
+  &__tile-padding {
+    padding: 0 45px 0 75px;
+  }
+
+  &__tile-details {
+    padding-top: 15px;
+  }
+
+  &__details-list {
+    margin-top: 10px;
+  }
+
+  &__mobile-details {
+    padding: 10px 0;
+  }
+
+// Section --------------------------------------
+  &__content {
+    display: flex;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 50%;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      z-index: 1;
+    }
+
+    &::before {
+      left: 0;
+      background: #00273A;
+    }
+
+    &::after {
+      right: 0;
+      background: darken(#00273A, 2%);
+    }
+  }
+
+
+// ----
+
+  &__paragraph {
+    color: white;
+
+    ~ .horse-header__paragraph {
+      margin-top: 10px;
+    }
+  }
+
+// ----
+
+
+
+// ----
+
+  &__btn-details {
+    margin-bottom: 15px;
+  }
+
+// ----
+
+  //&__details {
+  //  color: #6D6E71;
+  //  font-size: 12px;
+  //  padding-top: 15px;
+  //  padding-bottom: 25px;
+  //  background: #fff;
+  //
+  //  @media (min-width: $screen-md) {
+  //    box-shadow: none;
+  //  }
+  //}
+
+// ----
+
+  &__comment-title {
+    margin: 20px 0 10px;
+  }
+
+// -----
+
+  &__description-title {
+    @media (min-width: $screen-md) {
+      color: white;
+      font-size: 30px
+    }
+  }
+
+// Slider ---------------------------------------
+  &__slider {
+    .nica-carousel__slide {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__text-section {
+    ~ .horse-header__text-section {
+      margin-top: 50px;
+    }
+  }
+
+  &__timeford-title {
+    margin-top: 15px;
+  }
+}

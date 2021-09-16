@@ -1,0 +1,10 @@
+.secondary-nav-bar {
+  position: relative;
+  width: 100%;
+  background: $color-bg-strong;
+
+  &__list {
+    position: relative;
+    padding: 45px 0px 10px 0px;
+  }
+}

@@ -1,0 +1,245 @@
+.register-syndicate-members {
+
+  .register-syndicate-members_section {
+    .register-syndicate-members-content {
+
+      .members-content {
+        .left {
+          .members-description {
+            margin: 35px 0;
+            h2 {
+              color: $yankees-blue;
+            }
+            p {
+              color: $yankees-blue;
+              font-weight: 400;
+            }
+          }
+          .members-counter {
+            margin-bottom: 30px;
+          }
+        }
+        .right {
+          .syndicate-member-step-state {
+            margin-top: 35px;
+            text-align: right;
+            padding: 15px 0;
+            border-right: 1px solid #ccc;
+            .step {
+              margin-bottom: 30px;
+              margin-right: -8px;
+              .text {
+                display: inline-block;
+                margin-right: 20px;
+                h6 {
+                  font-size: 13px;
+                  color: #ccc;
+                  font-weight: 500;
+                }
+              }
+              .step-icon {
+                width: 15px;
+                height: 15px;
+                background-color: $white;
+                border: 1px solid #ccc;
+                display: inline-block;
+                transform: rotate(45deg);
+              }
+              &:last-child {
+                margin-bottom: 0;
+              }
+              &.active {
+                .text h6 {
+                  font-size: 14px;
+                  color: $yankees-blue;
+                  font-weight: 600;
+                }
+                .step-icon {
+                  background-color: $yankees-blue;
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      .members-detail {
+        .title {
+          margin: 35px 0;
+          h2 {
+            color: $yankees-blue;
+          }
+        }
+
+        .add-members__section {
+          .add-member {
+            .AddMemberCard {
+              width: 100%;
+              height: 160px;
+              margin: 0 auto 30px;
+              padding-top: 70px;
+              box-shadow: 0px 0px 25px 1px #ddd;
+              text-align: center;
+
+              a {
+                cursor: pointer;
+                font-style: italic;
+                font-size: 14px;
+              }
+            }
+
+            .account-card-form {
+              .section-shadow--tile {
+                border-color: $white !important;
+                .account-card-form__form-heading {
+                  .account-card-form__close:before {
+                    color: #888;
+                  }
+                }
+                form {
+                  text-align: left;
+                  .form__group {
+                    margin-bottom: 5px;
+                  }
+                  button {
+                    background: none;
+                    border: 1px solid $vanilla-ice;
+                    min-width: auto;
+                    padding: 0 40px;
+                    margin-top: 15px;
+                    h6 {
+                      color: $vanilla-ice;
+                    }
+                  }
+                }
+              }
+            }
+            .syndicate-member-card {
+              height: 170px;
+              padding: 15px 0px;
+              border-top: 7px solid #000;
+              box-shadow: 0px 0px 25px 1px #ddd;
+              .card-content {
+                padding: 0 20px;
+                .card-text {
+                  margin-bottom: 3px;
+                  &.first-surname {
+                    margin-bottom: 12px;
+                  }
+                }
+              }
+              .card-footer {
+                text-align: right;
+                .card-buttons {
+                  padding: 0 20px;
+                  .card-btn {
+                    width: 40px;
+                    display: inline-block;
+                    font-style: italic;
+                    cursor: pointer;
+                    .del-btn {
+                      color: #999;
+                    }
+                  }
+                }
+                .card-distribution {
+                  padding: 0 20px;
+                  font-size: 12px;
+                  font-weight: 500;
+                  text-align: left;
+                  line-height: 30px;
+                  border-top: 1px solid #eee;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .members-footer {
+        margin: 100px 0 80px 0;
+        text-align: center;
+        button {
+          width: auto;
+          padding: 5px 50px;
+        }
+        .btn-comment {
+          color: $vanilla-ice;
+          margin-top: 20px;
+          margin-bottom: 35px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .step2 {
+    .slider-section {
+      .slider-content {
+        .slider {
+          margin-bottom: 50px;
+        }
+        .syndicate-name {
+          margin-bottom: 15px;
+        }
+        .warning-msg {
+          font-weight: 400;
+          color: $vanilla-ice;
+        }
+      }
+    }
+  }
+
+  .step3 {
+    .distribution-btn {
+      text-align: center;
+      margin-top: 35px;
+      h6 {
+        font-style: italic;
+        cursor: pointer;
+      }
+    }
+    .members-footer {
+      .checkbox-content {
+        width: 50%;
+        text-align: left;
+        margin-left: 30%;
+        .checkbox {
+          label {
+            display: block;
+            color: #666;
+          }
+          &:last-child {
+            .checkbox__element {
+              top: 10px;
+            }
+          }
+        }
+      }
+      button {
+        margin-top: 50px;
+      }
+    }
+  }
+
+}
+
+.distribution-slider {
+  .rc-slider-tooltip-arrow {
+    left: 35px;
+    top: -8px;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $space-cadet;
+    margin-top: 7px;
+  }
+  .rc-slider-tooltip-inner {
+    background-color: $space-cadet;
+    border-radius: 0;
+    padding: 10px 30px;
+    height: 30px;
+    margin-top: 7px;
+  }
+}

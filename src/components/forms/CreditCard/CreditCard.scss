@@ -1,0 +1,21 @@
+.credit-card-form {
+  position: relative;
+
+  .StripeElement {
+    border-bottom: 1px solid $form-input-color;
+    position:relative;
+    &:before {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: -2px;
+      position: absolute;
+      background: $form-input-color-active;
+      transition: 0.4s ease all;
+      left: 0;
+    }
+    &--focus:before{
+      width: 100%;
+    }
+  }
+}

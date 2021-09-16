@@ -1,0 +1,22 @@
+.login-form {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  background: $white;
+
+  @media all and (min-width: $screen-sm) {
+    max-width: 305px;
+    padding: 20px 40px;
+  }
+
+  &__form {
+    position: relative;
+    width: 100%;
+  }
+
+  &__submit {
+    max-width: 294px;
+  }
+}

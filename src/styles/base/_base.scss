@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+}
+
+body {
+  margin: 0;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+label {
+  cursor: pointer;
+}
+
+.main-container {
+
+}
+
+hr {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+
+  &.no-list-style {
+    list-style: none;
+  }
+
+  &.square {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding-left: 18px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 2px;
+        height: 2px;
+        background: url('../assets/images/square.svg') no-repeat left top;
+      }
+    }
+  }
+}
+
+sup {
+  &.small {
+    top: -1em;
+    font-size: 50%;
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.absolute-center-v {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.absolute-center-h {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

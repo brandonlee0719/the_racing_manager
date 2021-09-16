@@ -1,0 +1,14 @@
+.counter {
+  display: flex;
+  align-items: center;
+  
+  &__input {
+    position: relative;
+    padding: 0 10px;
+    max-width: 105px;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+}

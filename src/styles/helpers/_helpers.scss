@@ -1,0 +1,29 @@
+.image--background {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin absolute-center($transform: '') {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @if ($transform == '') {
+    transform: translate(-50%, -50%);
+  }
+  @else {
+    transform: translate(-50%, -50%) $transform;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute-center {
+  @include absolute-center
+}
+
+.full-height {
+  height: calc(100vh - #{$header-height});
+}

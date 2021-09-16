@@ -1,0 +1,78 @@
+/**
+ *  KEYFRAMES
+ */
+@keyframes small-shift-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0)
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+.fade-in {
+  animation: fade-in .4s ease-out;
+}
+
+/**
+ *  REACT CSS TRANSITION GROUP ANIMATIONS
+ */
+
+/**
+ *  FADE
+ */
+.fade-in-enter, .fade-in-appear {
+  opacity: 0;
+}
+
+.fade-in-enter.fade-in-enter-active, .fade-in-appear.fade-in-appear-active {
+  opacity: 1;
+  transition: opacity .4s ease-out;
+}
+
+.fade-in-leave {
+  opacity: 1;
+}
+
+.fade-in-leave.fade-in-leave-active {
+  opacity: 0;
+  transition: opacity .4s ease-out;
+}
+
+/**
+ *  Fade shift
+ */
+.fade-shift-enter, .fade-shift-appear {
+  opacity: 0;
+  transform: translate3d(0, 10px, 0);
+}
+
+.fade-shift-enter.fade-shift-enter-active, .fade-shift-appear.fade-shift-appear-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity .4s ease-out, transform .4s ease-out;
+}
+
+.fade-shift-leave {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.fade-shift-leave.fade-shift-leave-active {
+  opacity: 0;
+  transform: translate3d(0, 10px, 0);
+  transition: opacity .4s ease-out, transform .4s ease-out;
+}

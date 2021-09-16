@@ -1,0 +1,22 @@
+.input {
+  $input-height: 32px;
+
+  width: 100%;
+  position: relative;
+  
+  &__input-element {
+    width: 100%;
+    border-bottom: 1px solid $form-input-color;
+    line-height: $input-height;
+    font-size: $tiny-title;
+    font-family: $font-family-secondary;
+    box-sizing: border-box;
+    
+    &::placeholder {
+      color: $placeholder-color;
+      font-weight: 300;
+      font-family: $font-family-secondary;
+      font-size: $tiny-title;
+    }
+  }
+}

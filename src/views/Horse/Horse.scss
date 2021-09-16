@@ -1,0 +1,37 @@
+.horse-syndicate-btn {
+  width: 205px;
+  display: block;
+  border: 1px solid white;
+  background: transparent;
+  margin: 25px auto 0;
+
+  @media (min-width: $screen-md) {
+    margin-left: 0;
+  }
+}
+
+.horse-small-section,
+.horse-big-section {
+  p,
+  ul,
+  span,
+  h1, h2, h4 {
+    color: white;
+  }
+}
+
+.horse-padding {
+  padding-top: 35px;
+  padding-bottom: 25px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 55px;
+    padding-bottom: 105px; // 45px;
+  }
+}
+
+.horse-paragraphs {
+  ~ .horse-paragraphs {
+    margin-top: 15px;
+  }
+}

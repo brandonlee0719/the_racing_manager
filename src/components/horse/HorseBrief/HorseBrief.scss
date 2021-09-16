@@ -1,0 +1,20 @@
+.horse-brief {
+  margin: 15px 0;
+
+  &__title {
+    color: #00273A;
+  }
+
+  &__description {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  &__gender {
+    text-transform: capitalize;
+  }
+
+  &__owner {
+    text-transform: none;
+  }
+}

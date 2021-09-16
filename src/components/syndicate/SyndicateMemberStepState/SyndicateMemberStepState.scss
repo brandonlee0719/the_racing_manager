@@ -1,0 +1,35 @@
+.account-credit-card {
+  position: relative;
+
+  &__header {
+    color: $color-text-heading-strong;
+  }
+
+  &__text-primary {
+    color: $color-text-faded;
+  }
+
+  &__text-secondary {
+    color: $color-text-faded-dark;
+  }
+
+  &__section-small {
+    position: relative;
+    margin-top: 15px;
+  }
+
+  &__section {
+    position: relative;
+    margin-bottom: 5px;
+    @include clearfix();
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    position: relative;
+    @include clearfix();
+  }
+}

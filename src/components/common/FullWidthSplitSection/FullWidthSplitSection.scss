@@ -1,0 +1,94 @@
+.full-width-split-section {
+  position: relative;
+  width: 100%;
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+
+    @media all and (min-width: $screen-sm-min) {
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+
+    @media all and (max-width: $screen-sm) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  // Themes
+  &--blue {
+    .full-width-split-section__wrapper {
+      @media all and (min-width: $screen-sm-min) {
+        &:before {
+          background: $color-bg-strong;
+        }
+
+        &:after {
+          background: $color-bg-dark;
+        }
+      }
+    }
+
+    .full-width-split-section__left {
+      background: $color-bg-strong;
+    }
+
+    .full-width-split-section__right {
+      @media all and (max-width: $screen-sm) {
+        background: $color-bg-dark;
+      }
+    }
+  }
+
+  &--white {
+    .full-width-split-section__wrapper {
+      @media all and (min-width: $screen-sm-min) {
+        &:before {
+          background: $color-bg-secondary;
+        }
+
+        &:after {
+          background: $color-bg-faded-dark;
+        }
+      }
+    }
+
+    .full-width-split-section__left {
+      background: $color-bg-secondary;
+    }
+
+    .full-width-split-section__right {
+      @media all and (max-width: $screen-sm) {
+        background: $color-bg-faded-dark;
+      }
+    }
+  }
+}

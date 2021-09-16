@@ -1,0 +1,41 @@
+.radio {
+  position: relative;
+  width: 100%;
+
+  &__label {
+    position: relative;
+    width: 100%;
+  }
+
+  &__label__text {
+    position: relative;
+    color: $space-cadet;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__button {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid rgba($black, 0.46);
+    transition: background .2s ease-out, border-color .2s ease-out;
+    margin-right: 18px;
+  }
+
+  &__input:checked + &__button {
+    border-color: $vanilla-ice;
+    background: $vanilla-ice;
+  }
+}
+
+.radio ~ .radio {
+  margin-top: 20px;
+}

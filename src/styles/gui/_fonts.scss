@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,500');
+
+$sans-serif-web-safe: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-web-safe: Georgia, Times, "Times New Roman", serif;
+
+$font-family-base: Oswald, $sans-serif-web-safe;
+$font-family-secondary: "Gill Sans", $sans-serif-web-safe;
+
+@font-face {
+  font-family: 'trmicons';
+  src:  url('../assets/fonts/trmicons.eot?rb472d');
+  src:  url('../assets/fonts/trmicons.eot?rb472d#iefix') format('embedded-opentype'),
+    url('../assets/fonts/trmicons.ttf?rb472d') format('truetype'),
+    url('../assets/fonts/trmicons.woff?rb472d') format('woff'),
+    url('../assets/fonts/trmicons.svg?rb472d#trmicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

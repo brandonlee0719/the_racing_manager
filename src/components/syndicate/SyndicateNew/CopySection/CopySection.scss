@@ -1,0 +1,47 @@
+$copy-section-card-height: 350px;
+
+.copy-section {
+  padding-top: 35px;
+  padding-bottom: 65px;
+  overflow: hidden;
+  position: relative;
+  @media (min-width: $screen-sm) {
+    padding-top: 70px;
+    padding-bottom: 130px;
+  }
+  @media (min-width: $screen-md) {
+    padding-top: 125px;
+    padding-bottom: 225px;
+  }
+  &__copy-card-container {
+    margin-bottom: 110px;
+  }
+  &__copy-card-background {
+    position: absolute;
+    top: 75px;
+    bottom: -50px;
+    left: -15vw;
+    right: -35vw;
+    @media (min-width: $screen-md) {
+      top: 44px;
+      bottom: -23px;
+      left: -50vw;
+      right: -12px;
+    }
+  }
+  &__overlapping-headline {
+    color: $snow;
+    display: inline-table;
+    text-transform: uppercase;
+    font-size: 100px;
+    position: absolute;
+    bottom: 0;
+    max-width: 2000px;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: $screen-lg) {
+      font-size: 171px;
+    }
+  }
+}

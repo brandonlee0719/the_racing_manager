@@ -1,0 +1,23 @@
+.horse-accordions {
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__member {
+    margin: 10px auto;
+  }
+
+  &__load-more {
+    display: block;
+    margin: 30px auto 0;
+  }
+
+  p ~ p {
+    margin-top: 10px;
+  }
+
+  &__middle-title {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,50 @@
+.mobile-search-input {
+  $icon-margin-top: 0;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 0;
+  transition: width .4s ease-out;
+  background-color: $white;
+  
+  &--active {
+    width: 100%;
+  }
+
+  input::placeholder {
+    text-transform: uppercase;
+    font-size: $micro-title;
+  }
+
+  .input {
+    overflow: hidden;
+  }
+
+  input {
+    padding-left: 25px;
+    border: 0;
+    line-height: initial;
+  }
+
+  &__close-container {
+    position: relative;
+  }
+
+  &__close {
+    position: relative;
+    margin: $icon-margin-top 0 0 15px;
+    z-index: 1;
+    cursor: pointer;
+
+    &:before {
+      color: $vanilla-ice;
+    }
+  }
+
+  &__glass {
+    margin-top: $icon-margin-top;
+    cursor: pointer;
+    z-index: 1;
+  }
+}

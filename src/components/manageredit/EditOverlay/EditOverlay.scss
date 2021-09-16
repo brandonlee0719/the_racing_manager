@@ -1,0 +1,61 @@
+.edit-overlay {
+  $min-height: 280px;
+  $container-padding: 8px;
+
+  padding: 10px;
+
+  @media all and (min-width: $screen-sm-min) {
+    padding: 20px;
+  }
+
+  @media all and (min-width: $screen-md-min) {
+    padding: 40px;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    background: $color-bg-secondary;
+
+    &--secondary {
+      background: $color-bg-strong;
+    }
+
+    &--no-bg {
+      background: transparent;
+    }
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    padding: $container-padding;
+  }
+
+  &__dashed-border {
+    position: relative;
+    width: 100%;
+    padding: 50px 30px 30px 30px;
+    border: 1px dashed $vanilla-ice;
+    min-height: $min-height;
+  }
+
+  &__button-group {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__button {
+    margin-top: 0 !important;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  h1, h2, h3, h4 {
+    color: $black !important;
+  }
+}

@@ -1,0 +1,23 @@
+// Base rules
+@import 'base/normalize.scss';
+@import 'base/*';
+
+// Bootstrap variables
+@import 'helpers/bootstrap/bootstrap-variables';
+
+// GUI
+@import 'gui/*';
+
+// Helpers
+@import 'helpers/*';
+
+// Vendor styles
+@import 'vendor/*';
+
+// Components, layouts & views
+@import 'common/*';
+@import '../components/**/*.scss';
+@import '../components/**/**/*.scss';
+@import '../components/**/**/**/*.scss';
+@import '../layouts/**/*.scss';
+@import '../views/**/*.scss';

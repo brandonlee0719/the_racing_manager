@@ -1,0 +1,30 @@
+.separator {
+  width: 75px;
+  height: 2px;
+  margin: 20px 0;
+  background: $color-seperator-primary;
+
+  &--white {
+    background: $color-seperator-light;
+  }
+
+  &--black {
+    background: $color-seperator-dark;
+  }
+
+  &--blue {
+    background: $color-seperator-strong;
+  }
+
+  &--grey {
+    background: $color-seperator-weak;
+  }
+  
+  &--fluid {
+    width: 100%;
+  }
+
+  &--thin {
+    height: 1px;
+  }
+}

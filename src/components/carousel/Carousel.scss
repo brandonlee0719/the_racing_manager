@@ -1,0 +1,68 @@
+.nica-carousel {
+  position: relative;
+  display: block;
+  height: auto;
+  box-sizing: border-box;
+
+  &__frame {
+    position: relative;
+    display: block;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  &__list {
+    position: relative;
+    display: block;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    cursor: grab;
+    line-height: 0;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    &--animate {
+      transition: margin .4s ease-out;
+    }
+  }
+
+  &__slide {
+    position: relative;
+    list-style-type: none;
+    vertical-align: top;
+    height: auto;
+    box-sizing: border-box;
+    z-index: 2;
+    line-height: 0;
+  }
+
+  &__arrows {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    pointer-events: none;
+
+    >* {
+      pointer-events: auto;
+    }
+
+    &--show-bar {
+      background: $color-bg-holo-dark;
+    }
+
+    &--top {
+      bottom: initial;
+      top: 0;
+    }
+
+    &--middle {
+      bottom: initial;
+      top: 50%;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.horse-card {
+  $overview-border: 15px;
+  $image-top: 0px;
+  $section-padding: 8px 15px 0px 15px;
+  $info-section-padding: 8px 15px 8px 15px;
+
+  position: relative;
+  text-align: left;
+  width: calc(100% - 20px);
+
+  @media all and (min-width: 337px) {
+    width: 266px;
+  }
+
+  &__header-primary {
+    color: $color-text-heading-bold
+  }
+
+  &__header-secondary {
+    color: $color-text-heading-strong;
+  }
+
+  &__text-primary {
+    color: $color-text-faded;
+  }
+
+  &__text-secondary {
+    color: $color-text-faded-dark;
+  }
+
+  &__section-margin {
+    margin-bottom: 5px;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 163px;
+    border-left: $overview-border solid transparent;
+    transition: opacity .2s ease-out, transform .2s ease-out;
+
+    &--inactive {
+      transform: scale3d(0.95, 0.95, 0.95);
+      opacity: 0.2;
+    }
+  }
+
+  &__banner {
+    position: absolute;
+    top: 0;
+    left: -$overview-border;
+    width: 100%;
+    height: 20px;
+    background-color: $silver-chalice;
+    padding: 3px 0;
+    z-index: 2;
+
+    >h6 {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      color: $color-text-light;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($white, 0.8);
+  }
+
+  &__bg {
+    position: absolute;
+    top: $image-top;
+    left: -$overview-border;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+  }
+
+  &__stats {
+    position: relative;
+    width: 100%;
+    @include clearfix();
+  }
+
+  &__statsitem {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__info {
+    position: relative;
+    padding: $info-section-padding;
+  }
+
+  &__infolist {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__infoitem {
+    position: relative;
+    width: 100%;
+    @include clearfix();
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    >h6 {
+      padding-right: 10px;
+      font-weight: 400;
+    }
+
+    >p {
+      padding-left: 10px;
+    }
+
+    @media all and (max-width: $screen-sm) {
+      >h6, >p {
+        font-size: $tiny-title;
+      }
+    }
+
+  }
+
+  &__extra {
+    position: relative;
+    width: 100%;
+
+    @media all and (max-width: $screen-sm) {
+      > span > h6 {
+       font-size: $tiny-title;
+      }
+
+      > span > p {
+        font-size: $micro-title;
+      }
+    }
+  }
+  
+  &__button {
+    width: 100%;
+    height: 40px;
+
+    @media all and (min-width: $screen-sm-min) {
+      height: 30px;
+    }
+  }
+}

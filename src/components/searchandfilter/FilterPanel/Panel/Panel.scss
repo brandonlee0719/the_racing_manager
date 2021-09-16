@@ -1,0 +1,43 @@
+.filter-panel {
+  position: relative;
+  width: 100%;
+  padding: 40px 20px;
+
+  &__title {
+    margin-bottom: 15px;
+    color: $outer-space;
+  }
+
+  &__column {
+    margin-bottom: 50px;
+
+    // To clear variable heights in the columns on tablet
+    // Could use flex but thats unnesscary IMHO
+    @media only screen and (min-width: $screen-sm) {
+      &:nth-child(3) {
+        clear: left;
+      }
+    }
+
+    @media all and (min-width: $screen-lg) {
+      &:nth-child(3) {
+        clear: none;
+      }
+    }
+  }
+
+  &__slider-container {
+    position: relative;
+    width: 100%;
+    margin-top: 25px; 
+  }
+
+  &__range-slider {
+    margin-top: 40px;
+    padding: 0 10px;
+
+    @media all and (min-width: $screen-sm) {
+      padding: 0;
+    }
+  }
+}

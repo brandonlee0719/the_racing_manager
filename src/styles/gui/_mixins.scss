@@ -1,0 +1,22 @@
+@mixin font-size($sizeValue: 16px) {
+  font-size: $sizeValue;
+  font-size: $sizeValue / 10px + rem;
+}
+
+@mixin vertical-align() {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+@mixin truncate() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin unTruncate () {
+  white-space: initial !important;
+  overflow: initial !important;
+  text-overflow: initial !important;
+}

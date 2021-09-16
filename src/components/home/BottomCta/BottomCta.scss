@@ -1,0 +1,51 @@
+$bottom-cta-padding: 80px;
+
+.bottom-cta {
+  padding: $bottom-cta-padding 0;
+  position: relative;
+  &__wave-line {
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 240px;
+    @media (min-width: $screen-sm) {
+      bottom: 145px;
+    }
+    @media (min-width: $screen-md) {
+      top: $bottom-cta-padding + 50px;
+      bottom: auto;
+    }
+  }
+  &__quote-author {
+    margin-top: 8px;
+    color: $old-silver;
+  }
+  &__video-container {
+    margin-bottom: 25px;
+    @media (min-width: $screen-md) {
+      position: absolute !important;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__buttons {
+    padding-top: 70px;
+    @media (min-width: $screen-md) {
+      padding-left: 35px;
+    }
+  }
+  &__button {
+    width: 100%;
+    margin-bottom: 14px;
+    @media (min-width: $screen-sm) {
+      width: auto;
+      margin-bottom: 0;
+      margin-left: 14px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

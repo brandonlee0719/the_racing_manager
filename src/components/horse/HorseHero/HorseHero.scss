@@ -1,0 +1,65 @@
+.horse-hero {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  z-index: 0;
+
+  @media (min-width: $screen-md-min) {
+    height: 550px;
+  }
+
+  &__parallax-image {
+    overflow: hidden;
+  }
+
+  .parallax-hero__image {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-width: $screen-sm-min) {
+      height: 350px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      height: 550px;
+    }
+  }
+
+  &__card-container {
+    width: auto;
+
+    @media (min-width: $screen-md) {
+      position: absolute;
+      width: 970px;
+      height: 100%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      position: absolute;
+      width: 1170px;
+      height: 100%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__card {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+  }
+
+  &__mobile-card {
+    position: relative;
+    z-index: 2;
+  }
+}

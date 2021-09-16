@@ -1,0 +1,17 @@
+.card-image-edit {
+  position: relative;
+  &__edit-button {
+    position: relative;
+    margin-bottom: 30px;
+    @media (min-width: $screen-md) {
+      position: absolute !important;
+    }
+  }
+  &__card {
+    margin: auto;
+    display: block;
+    @media (min-width: $screen-md) {
+      margin: 0;
+    }
+  }
+}

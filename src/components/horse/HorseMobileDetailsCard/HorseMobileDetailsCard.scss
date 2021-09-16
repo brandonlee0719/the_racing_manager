@@ -1,0 +1,16 @@
+.horse-mobile-details-card {
+  position: relative;
+  width: 100%;
+  background: $color-bg-secondary;
+
+  &__section {
+    position: relative;
+    width: 100%;
+    padding: 10px 0px;
+    @include clearfix();
+  }
+
+  &__cta {
+    margin-bottom: 15px;
+  }
+}

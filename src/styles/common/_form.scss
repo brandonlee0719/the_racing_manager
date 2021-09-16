@@ -1,0 +1,23 @@
+/**
+ *  Forms
+ */
+.form {
+  &__group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__section-label {
+    font-family: $font-family-secondary;
+    color: $color-text-strong;
+    text-transform: capitalize;
+    
+    @media all and (min-width: $screen-md) {
+      text-transform: uppercase;
+    }
+
+    &--title-margin {
+      margin-top: 45px;
+    }
+  }
+}

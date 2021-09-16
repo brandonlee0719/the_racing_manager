@@ -1,0 +1,98 @@
+[class^="icon--"], [class*=" icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'trmicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--update:before {
+  content: "\e914";
+}
+
+.icon--check:before {
+  content: "\e913";
+  color: #e78090;
+}
+
+.icon--email:before {
+  content: "\e911";
+  color: #233654;
+}
+.icon--whatsapp:before {
+  content: "\e912";
+  color: #233654;
+}
+.icon--share:before {
+  content: "\e910";
+  color: #818181;
+}
+.icon--horse:before {
+  content: "\e90e";
+  color: #595a5c;
+}
+.icon--account:before {
+  content: "\e90f";
+  color: #595a5c;
+}
+.icon--linked-in:before {
+  content: "\e90d";
+  color: #e8808f;
+}
+.icon--plus:before {
+  content: "\e90b";
+  color: #595a5c;
+}
+.icon--minus:before {
+  content: "\e90c";
+  color: #595a5c;
+}
+.icon--magnifying-glass:before {
+  content: "\e909";
+  color: #595a5c;
+}
+.icon--dropdown:before {
+  content: "\e90a";
+  color: #595a5c;
+}
+.icon--close:before {
+  content: "\e908";
+  color: #000;
+}
+.icon--paperclip:before {
+  content: "\e904";
+  color: #a6a8ac;
+}
+.icon--leftarrow:before {
+  content: "\e902";
+}
+.icon--rightarrow:before {
+  content: "\e903";
+}
+.icon--heart:before {
+  content: "\e900";
+  color: #818181;
+}
+.icon--comment:before {
+  content: "\e901";
+  color: #818181;
+}
+.icon--pinterest:before {
+  content: "\e905";
+  color: #e8808f;
+}
+.icon--twitter:before {
+  content: "\e906";
+  color: #e8808f;
+}
+.icon--facebook:before {
+  content: "\e907";
+  color: #e8808f;
+}

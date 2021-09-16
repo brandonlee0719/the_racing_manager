@@ -1,0 +1,27 @@
+.account-notifications {
+  position: relative;
+
+  &__container {
+    position: relative;
+    @include clearfix();
+  }
+  
+  &__section {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+
+    &--lg {
+      margin-top: 30px;
+    }
+  }
+
+  span {
+    white-space: nowrap;
+  }
+
+  span.result-message {
+    color: $vanilla-ice;
+  }
+  
+}

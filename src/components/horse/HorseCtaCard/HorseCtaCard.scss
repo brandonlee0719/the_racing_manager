@@ -1,0 +1,53 @@
+.horse-cta-card {
+  $margin-top: 8px;
+  $bottom-offset: 0px;
+
+  bottom: $bottom-offset;
+
+  a {
+    display: block;
+
+    ~ a {
+      margin-top: $margin-top;
+    }
+  }
+
+  &--mobile {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: calc(100% - 25px);
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  &__share-text {
+    margin-top: $margin-top;
+  }
+
+  &__social-links {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: $margin-top;
+  }
+
+  &__social-link {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__social-icon {
+    &:before {
+      font-size: $tiny-title;
+      color: $cta-link-color;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.manager-dashboard {
+
+  .manager-dashboard-link__header {
+    position: fixed;
+    top: 45px;
+    width: 100%;
+    z-index: 1000;
+    background-color: $color-bg-view-link-header;
+    .manager-dashboard__section {
+      width: 100%;
+    }
+  }
+
+  .manager-dashboard__header {
+    margin-top: 81px;
+  }
+
+  .manager-dashboard__section {
+    width: 90%;
+
+    .forms-top {
+      .fee-structure {
+        width: 60%;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        height: 700px;
+        padding-left: 35px;
+        display: inline-block;
+      }
+      .bank-details {
+        background-color: $color-bg-bank-detail;
+        width: 40%;
+        padding-right: 35px;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        height: 700px;
+        display: inline-block;
+      }
+    }
+
+    .forms-bottom {
+      .invoice-archive {
+        width: 100%;
+        background-color: $color-bg-invoice-archive;
+
+        @media screen and (min-width: 768px) {
+          padding: 0 35px;
+        }
+        //box-shadow: inset 0px 10px 20px 0px $x11-gray
+        background: -moz-linear-gradient(top, rgba(238,238,238,1) 0, rgba(238,238,238,0) 30px); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0,rgba(238,238,238,0) 30px); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(238,238,238,1) 0,rgba(238,238,238,0) 30px); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#00eeeeee',GradientType=0 ); /* IE6-9 */
+      }
+    }
+  }
+}

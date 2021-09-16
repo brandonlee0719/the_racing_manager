@@ -1,0 +1,101 @@
+.select {
+  $input-height: 25px;
+
+  position: relative;
+  width: 100%;
+
+  &__select-input {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    font-size: $micro-title;
+    font-family: $font-family-secondary;
+    text-transform: uppercase;
+
+    &::placeholder {
+      color: $placeholder-color;
+      font-weight: 300;
+      font-family: $font-family-secondary;
+      font-size: $text;
+    }
+
+    @media all and (min-width: $screen-sm) {
+      border-bottom: 1px solid $form-input-color;
+    }
+
+    > h6 {
+      line-height: $input-height;
+      @include truncate();
+      overflow: visible;
+    }
+  }
+
+  &__results {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: 320px;
+    margin: 1px 0 0 0; // To show the line under the input
+    transform: translate(-50%, 0);
+    z-index: 999;
+
+    @media all and (min-width: $screen-sm) {
+      width: 100%;
+      z-index: 999;
+      transform: none;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      background: $white;
+
+      @media all and (min-width: $screen-sm) {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  // Extract this out
+  .option {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    transition: opacity .4s ease-out;
+    padding: 10px 5px;
+    min-height: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--disabled {
+     opacity: 0.5;
+    }
+
+    @media all and (max-width: $screen-sm) {
+      text-align: center;
+      padding: 10px 5px;
+
+      &--active {
+        background: $space-cadet;
+        
+        h6 {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__mobile-title {
+    color: $davys-gray;
+    @include truncate();
+    overflow: visible;
+    
+    &--active {
+      color: $space-cadet;
+    }
+  }
+}

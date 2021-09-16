@@ -1,0 +1,37 @@
+.text-edit {
+  position: relative;
+
+  &__text {
+    textarea {
+      color: $color-text-strong;
+
+      &::placeholder {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__char-count {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+    >h6 {
+      color: $color-text-faded;
+      display: inline-block;
+    }
+  }
+
+  &__big {
+
+    textarea {
+      font-size: 40px;
+      &::placeholder {
+        font-size: 40px;
+      }
+
+    }
+
+  }
+}

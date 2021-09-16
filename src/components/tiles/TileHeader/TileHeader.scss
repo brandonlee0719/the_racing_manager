@@ -1,0 +1,36 @@
+.tile-header {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+  @include clearfix();
+
+  p {
+    color: $color-text-bold;
+  }
+
+  &__section {
+    position: relative;
+
+    &--middle {
+      flex: 3;
+      margin-right: 10px;
+    }
+
+    &--avatar {
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__icon:before {
+    vertical-align: top;
+    color: $color-text-bold;
+  }
+}

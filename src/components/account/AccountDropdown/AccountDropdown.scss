@@ -1,0 +1,26 @@
+.account-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  max-width: 380px;
+  background: $color-bg-secondary;
+
+  &__list {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    text-align: right;
+  }
+
+  &__list-item {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

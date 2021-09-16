@@ -1,0 +1,20 @@
+.registration-successful {
+  &__content-wrapper {
+    position: relative;
+    margin: 45px 0;
+  }
+
+  &__title {
+    color: $color-text-heading;
+  }
+
+  &__bottom {
+    position: relative;
+    margin-top: 60px;
+  }
+
+  &__resend-button {
+    position: relative;
+    margin-top: 25px;
+  }
+}

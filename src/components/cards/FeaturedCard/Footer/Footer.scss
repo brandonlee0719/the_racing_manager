@@ -1,0 +1,19 @@
+.featured-card-footer {
+  position: relative;
+  width: 100%;
+  max-width: $featured-card-max-width;
+  padding-right: 5px;
+  margin-top: 5px;
+
+  &__content-container {
+    position: relative;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  &__content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+}

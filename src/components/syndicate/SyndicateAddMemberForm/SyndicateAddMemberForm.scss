@@ -1,0 +1,22 @@
+.account-card-form {
+  position: relative;
+
+  &__form-heading {
+
+  }
+
+  &__close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    &:before {
+      color: $icon-cta-close;
+    }
+  }
+
+  .featured-card-frame__wrapper .section-shadow--tile {
+    border: none;
+  }
+}

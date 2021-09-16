@@ -1,0 +1,46 @@
+.register {
+  &__form-container {
+    background-color: $color-bg-secondary;
+    padding: 0 0 60px 0;
+
+    /* @media (max-width: $screen-sm) {
+      padding: 0px 20px 65px;
+    } */
+
+    @media (min-width: $screen-sm) {
+      padding: 0px 20px 40px;
+    }
+
+    &--heading {
+      @media all and (max-width: $screen-sm) {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      @media all and (min-width: $screen-sm-min) {
+        padding-top: 40px;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    @media all and (min-width: $screen-sm-min) {
+      background: $color-bg;  
+    }
+  }
+
+  &__form-opening-text {
+    color: $color-text-strong;
+  }
+
+  &__quick-register-container {
+    position: relative;
+    margin-bottom: 40px;
+
+    @media all and (min-width: $screen-sm-min) {
+      margin-bottom: 0px;
+    }
+  }
+}

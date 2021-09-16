@@ -1,0 +1,10 @@
+.text-popup-tile {
+  &__container {
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  &__heading {
+    padding-right: 40px !important; // For the close button
+  }
+}

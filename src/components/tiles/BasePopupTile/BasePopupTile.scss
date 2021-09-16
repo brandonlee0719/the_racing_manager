@@ -1,0 +1,12 @@
+.base-popup-tile {
+  position: relative;
+  width: 100%;
+  background-color: $white;
+  @include clearfix();
+
+  &__content {
+    position: relative;
+    width: 100%;
+    @include clearfix();
+  }
+}

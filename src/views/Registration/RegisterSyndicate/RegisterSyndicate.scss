@@ -1,0 +1,94 @@
+.register-syndicate_header {
+  @media screen and (min-width: 992px) {
+    .horse-padding {
+      padding-bottom: 55px;
+    }
+  }
+}
+.register-syndicate-content {
+
+  .register-requirements {
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    .requirements-content {
+      margin: 40px 0;
+      .block {
+        width: 85%;
+        height: 260px;
+        background-color: $white;
+        margin: 0 auto;
+        box-shadow: 0px 0px 25px 1px #ddd;
+
+        .block-header {
+          text-align: center;
+          font-size: 12px;
+        }
+        .block-content {
+          height: calc(100% - 22px);
+          position: relative;
+          background-color: #fafafa;
+          .block-body {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background-color: #122239;
+            background-image: url('/assets/images/wave-blue.svg');
+            background-size: 150px;
+            text-align: center;
+            padding-top: 10px;
+            opacity: 0.5;
+
+            h6 {
+              text-align: right;
+              color: #fff;
+              font-size: 14px;
+              padding-right: 10px;
+            }
+
+            h2.title {
+              color: $white;
+            }
+            &:hover {
+              opacity: 1;
+            }
+
+            &.name {
+              height: 100%;
+            }
+            &.horse {
+              height: 45%;
+            }
+            &.colours {
+              height: 70%;
+            }
+            &.members {
+              height: 90%;
+            }
+          }
+        }
+      }
+    }
+    .requirements-footer {
+      margin: 20px 0 50px 0;
+      text-align: center;
+      button {
+        width: auto;
+        padding: 0 45px;
+      }
+    }
+  }
+
+  .register-waiting {
+    .start-btn {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      button {
+        width: auto;
+        padding: 0 45px;
+      }
+    }
+
+  }
+
+}

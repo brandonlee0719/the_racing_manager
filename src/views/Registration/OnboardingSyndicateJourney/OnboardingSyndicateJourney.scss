@@ -1,0 +1,209 @@
+.onboarding-syndicate-journey {
+
+  &__header {
+
+    .view-header {
+
+      .view-header-bar {
+
+        .container {
+
+          h1.uppercase {
+
+            @media screen and (max-width: 768px) {
+              margin-left: 5%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  &__section {
+    width: 90%;
+
+    .syndicate-horses-number {
+      margin-top: 50px;
+    }
+
+    .title-description {
+
+      .title-description__paragraph {
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 50%;
+      }
+    }
+
+    .syndicate-horses-tell {
+      margin-top: 70px;
+
+      .title-description {
+
+        .title-description__paragraph {
+
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .horse-name-editor {
+        width: 25%;
+        display: inline-block;
+        margin-right: 5%;
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+
+        .message {
+
+          span {
+            color: blueviolet;
+          }
+        }
+      }
+    }
+
+    .syndicate-horses-duration {
+      margin-top: 70px;
+
+      .title-description {
+
+        .title-description__content {
+
+          p {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .syndicate-horses-ownership-type {
+      margin-top: 70px;
+
+      .title-description {
+
+        .title-description__content {
+
+          p {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .syndicate-horses-team-size {
+      margin-top: 70px;
+
+      .title-description {
+
+        .title-description__content {
+
+          p {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .syndicate-horses-option {
+    margin-top: 70px;
+
+    &__header {
+
+      .title-description__content {
+        width: 100%;
+
+        div.logo-image {
+          height: 39px;
+          width: 13%;
+          background-repeat: no-repeat;
+          display: inline-block;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: x-large;
+          font-style: italic;
+          color: darkgray;
+          display: inline-block;
+          font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+      }
+    }
+
+    &__content {
+      height: 412px;
+      margin-top: 70px;
+
+      @media screen and (max-width: 768px) {
+        height: 800px;
+      }
+
+      .content-left {
+        width: 40%;
+        margin-left: 6%;
+        background-color: #fff;
+        height: 350px;
+        padding: 3%;
+        display: inline-block;
+        float: left;
+
+        @media screen and (max-width: 768px) {
+          width: 88%;
+          margin-right: 6%;
+        }
+
+        .title-description {
+
+          &__content {
+
+            .description {
+
+              span.description-content {
+                font-weight: 500;
+              }
+
+              span.description-read-more {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                display: block;
+                font-weight: 500;
+              }
+
+              button.button.text-button.text-button--fluid {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+
+      .content-right {
+        width: 40%;
+        height: 350px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: inline-block;
+
+        @media screen and (max-width: 768px) {
+          width: 88%;
+          margin: 0 6%;
+          /*margin-top: 46%;
+          margin-left: -40%;*/
+        }
+      }
+    }
+  }
+
+
+}

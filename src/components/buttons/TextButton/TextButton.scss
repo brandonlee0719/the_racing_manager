@@ -1,0 +1,176 @@
+$cta-button-bg: $vanilla-ice;
+$cta-mobile-additional-height: 15px;
+$cta-button-height-sm: 25px;
+$cta-button-height-md: 30px;
+$cta-button-height: 35px;
+$cta-secondary-bg: white;
+$cta-hover-bg: darken($cta-button-bg, 10);
+$cta-active-bg: darken($cta-button-bg, 20);
+
+.text-button {
+  min-width: 190px;
+  height: $cta-button-height + $cta-mobile-additional-height;
+  background: $cta-button-bg;
+  text-transform: uppercase;
+  transition: background .25s ease-out;
+  padding: 0 5px;
+
+  @media (min-width: $screen-md) {
+    height: $cta-button-height;
+  }
+
+  &--xs {
+    min-width: 0;
+    height: $cta-button-height-md;
+    padding: 0 15px;
+  }
+
+  &--sm {
+    min-width: 120px;
+    height: $cta-button-height-sm;
+    padding: 0 15px;
+  }
+
+  &--md {
+    min-width: 170px;
+    height: $cta-button-height-md;
+    padding: 0 15px;
+  }
+
+  &--fluid {
+    width: 100%;
+    min-width: 0;
+    height: $cta-button-height-md;
+    padding: 0 15px;
+  }
+
+  body.no-touch &:hover {
+    background: $cta-hover-bg
+  }
+
+  &:active {
+    background: $cta-active-bg
+  }
+  
+  &__text {
+    color: white;
+  }
+  
+  &--secondary {
+    background: transparent;
+    border: 1px solid $cta-button-bg;
+    transition-property: background, border;
+    body.no-touch &:hover {
+      background: transparent;
+      border-color: $cta-hover-bg;
+      .text-button__text {
+        color: $cta-hover-bg;
+      }
+    }
+    &:active {
+      background: transparent;
+      border-color: $cta-active-bg;
+      .text-button__text {
+        color: $cta-active-bg;
+      }
+    }
+    .text-button__text {
+      transition: color .25s ease-out;
+      color: $cta-button-bg;
+    }
+  }
+
+  &--white {
+    background: $color-bg-secondary;
+    border: 1px solid $color-bg-secondary;
+    transition-property: background, border;
+    body.no-touch &:hover {
+      background: $color-bg-secondary;
+
+      .text-button__text {
+        color: $cta-hover-bg;
+      }
+    }
+
+    &:active {
+      background: $color-bg-secondary;
+      border-color: $color-bg-secondary;
+      .text-button__text {
+        color: $cta-active-bg;
+      }
+    }
+    .text-button__text {
+      transition: color .25s ease-out;
+      color: $cta-button-bg;
+    }
+  }
+
+  &--static-bg {
+    background: $color-bg-secondary !important;
+  }
+
+  &--blue {
+    background: $blue;
+    border: 1px solid $blue;
+    body.no-touch &:hover {
+      background: darken($blue, 15%);
+    }
+  }
+
+  &--secondary-blue {
+    background: transparent;
+    border: 1px solid $blue;
+    height: 35px;
+    
+    h6 {
+      color: $blue;
+    }
+
+    body.no-touch &:hover,
+    &.text-button--active,
+    &:active {
+      background: $blue;
+
+      h6 {
+        color: white;
+      }
+    }
+  }
+
+  &--secondary-navy-blue {
+    background: transparent;
+    border: 1px solid $space-cadet;
+    height: 35px;
+    
+    h6 {
+      color: $space-cadet;
+    }
+
+    body.no-touch &:hover,
+    &.text-button--active,
+    &:active {
+      background: $space-cadet;
+
+      h6 {
+        color: white;
+      }
+    }
+  }
+
+  body.no-touch &:disabled,
+  &:disabled {
+    background: $placeholder-color;
+  }
+
+  @media all and (min-width: $screen-xs) {
+    padding: 0 10px;
+  }
+
+  @media all and (min-width: $screen-sm) {
+    padding: 0 20px;
+
+    &--md, &--fluid {
+      padding: 0 15px;
+    }
+  }
+}

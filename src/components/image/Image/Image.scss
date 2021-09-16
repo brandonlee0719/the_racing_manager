@@ -1,0 +1,14 @@
+.image-container {
+  position: relative;
+  opacity: 0;
+  transition: opacity .4s ease-out;
+  
+  &--loaded {
+    opacity: 1;
+  }
+
+  &__image {
+    width: 100%;
+    vertical-align: top;
+  }
+}

@@ -1,0 +1,19 @@
+.updates-button {
+  position: relative;
+
+  &__amount {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    background-color: $cta-button-bg;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 2px;
+
+    >p {
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.popup-with-breadcrumb {
+  position: relative;
+  
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    padding: 20px 0;
+    background: $color-bg-secondary;
+    
+    @media all and (min-width: $screen-md-min) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__breadcrumb-text,
+  &__breadcrumb-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+  }
+}

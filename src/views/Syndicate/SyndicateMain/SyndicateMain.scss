@@ -1,0 +1,30 @@
+.syndicate-main {
+  .container {
+    padding: 0 0 0 0;
+  }
+  .syndicate-section {
+    background-color: $gainsboro;
+    margin-top: 200px;
+    margin-bottom: 350px;
+    padding: 0 40px 60px;
+
+    p.small {
+      min-height: 90px;
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        min-height: 120px;
+      }
+    }
+    .existing-syndicate-section {
+      background-color: $white;
+      margin-right: 30px;
+      padding: 0px 20px 20px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+    .new-syndicate-section {
+      background-color: $white;
+      padding: 0px 20px 20px;
+    }
+  }
+}

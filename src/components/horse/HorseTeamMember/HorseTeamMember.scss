@@ -1,0 +1,46 @@
+.team-member {
+  $image-size: 150px;
+  $image-size-s: 130px;
+
+  width: $image-size;
+  text-align: center;
+
+  &__image-wrapper {
+    width: $image-size-s;
+    height: $image-size-s;
+    border-radius: 100%;
+    background: $color-bg;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @media (min-width: $screen-sm) {
+      width: $image-size;
+      height: $image-size;
+    }
+  }
+
+  &__image {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+  }
+
+  &__name {
+    margin-top: 10px;
+  }
+
+  &__name,
+  &__role,
+  &__description {
+    color: $color-text-heading;
+  }
+
+  &__description {
+    margin-top: 10px;
+  }
+
+  &__link {
+    position: relative;
+    margin-top: 10px;
+  }
+}

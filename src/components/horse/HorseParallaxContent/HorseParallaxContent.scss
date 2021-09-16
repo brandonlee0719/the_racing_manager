@@ -1,0 +1,43 @@
+.horse-parallax-content {
+  $h: 500px;
+  $hDouble: ($h * 2);
+
+  overflow: hidden;
+  position: relative;
+  background: $color-bg-secondary;
+
+  &__overlay {
+    position: relative;
+    height: $h;
+    text-align: center;
+  }
+
+  &__title {
+    color: $color-text-strong;
+  }
+
+  &__parallax-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    position: relative;
+    height: $hDouble;
+    background-size: cover;
+    background-position: center top;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-parallax-image;
+    }
+  }
+}

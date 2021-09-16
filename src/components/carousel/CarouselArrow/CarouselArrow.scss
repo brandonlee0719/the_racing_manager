@@ -1,0 +1,36 @@
+.carousel-arrow {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  top: 0;
+  color: $button-cta-strong;
+  cursor: pointer;
+  
+  &--left {
+    left: 0px;
+  }
+
+  &--right {
+    right: 0px;
+  }
+
+  .icon--leftarrow, .icon--rightarrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--white {
+    .icon--leftarrow, .icon--rightarrow {
+      color: $button-secondary-cta;
+    }
+  }
+
+  &--red {
+    .icon--leftarrow, .icon--rightarrow {
+      color: $button-cta;
+    }
+  }
+}
+    

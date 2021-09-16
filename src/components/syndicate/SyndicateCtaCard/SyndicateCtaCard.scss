@@ -1,0 +1,18 @@
+.syndicate-cta-card {
+  $margin-top: 8px;
+  $bottom-offset: -23px;
+
+  bottom: $bottom-offset;
+
+  a {
+    display: block;
+
+    ~ a {
+      margin-top: $margin-top;
+    }
+  }
+
+  &__button {
+    width: 100%;
+  }
+}

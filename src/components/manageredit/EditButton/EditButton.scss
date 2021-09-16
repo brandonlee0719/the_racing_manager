@@ -1,0 +1,33 @@
+.edit-button {
+  position: relative;
+  width: 100%;
+  @include clearfix();
+
+  &__button {
+    position: relative;
+    float: right;
+    width: 150px;
+    z-index: 1;
+  }
+
+  &--absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &--right {
+    right: 0;
+    left: initial;
+  }
+
+  &--left {
+    left: 0;
+    right: initial;
+  }
+
+  .text-button--section {
+    margin-top: 50px;
+  }
+
+}

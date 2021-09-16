@@ -1,0 +1,32 @@
+.slim-picture-upload {
+  position: relative;
+  width: 100%;
+
+  &__section {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__upload,
+  &__upload-text {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    &--center {
+      margin: 0 10px;
+    }
+  }
+
+  &__file-upload {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+  }
+}

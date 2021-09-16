@@ -1,0 +1,12 @@
+.cta-panel-card {
+  $bottom-offset: 0;
+
+  position: absolute;
+  left: 25px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: $bottom-offset;
+  background: $color-bg-secondary;
+  padding: 10px;
+}

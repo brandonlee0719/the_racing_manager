@@ -1,0 +1,13 @@
+.horse-num-details {
+  color: #BBBDBF;
+  font-size: 12px;
+  margin-bottom: 15px;
+
+  &__item {
+    min-width: 50px;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+}

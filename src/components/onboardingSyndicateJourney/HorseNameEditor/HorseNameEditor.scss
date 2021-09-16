@@ -1,0 +1,28 @@
+.horse-name-card {
+
+  .horse-name {
+    width: 100%;
+
+    .featured-card {
+
+      .featured-card-frame {
+        max-width: none;
+
+        .featured-card-frame__wrapper.section-shadow--tile {
+          margin-top: 10%;
+
+          .featured-card-heading.featured-card__section-bg {
+
+            .featured-card__section.featured-card-heading__reduced-padding-top {
+              max-height: 45px;
+              overflow-y: visible;
+              input {
+                border-bottom: 1px solid #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

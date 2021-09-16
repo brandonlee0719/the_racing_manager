@@ -1,0 +1,30 @@
+.syndicate-intro-section {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+
+  @media all and (min-width: $screen-md-min) {
+    padding: 0 20px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 305px;
+    background-color: $color-bg-dark;
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+
+    &--small {
+      @media all and (min-width: $screen-md-min) {
+        margin-top: 40px;
+      }
+    }
+  }
+}

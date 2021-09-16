@@ -1,0 +1,52 @@
+$partners-slider-margin: 8vw;
+$partners-background: $yankees-blue;
+$partners-height: 55px;
+$partners-height-sm: 100px;
+
+.partners {
+  width: 100%;
+  background: $partners-background;
+  height: $partners-height;
+  
+  @media (min-width: $screen-sm) {
+    height: $partners-height-sm;
+  }
+  
+  &__carousel {
+    padding: 0 30px;
+  }
+
+  &__carousel-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  &__carousel-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__partner {
+    display: inline-block;
+    height: $partners-height;
+    width: 100%;
+    
+    @media (min-width: $screen-sm) {
+      height: $partners-height-sm;
+    }
+  }
+  
+  &__partner-image {
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 60px;
+    @media (min-width: $screen-sm) {
+      height: 50px;
+      width: 100px;
+    }
+  }
+}

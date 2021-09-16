@@ -1,0 +1,44 @@
+/* 
+*  Variables
+*/
+$form-input-line-width: 100%;
+$form-input-line-height: 2px;
+
+.form-input-line {
+  position: relative;
+  width: $form-input-line-width;
+  height: $form-input-line-height;
+  background: $form-input-color-active;
+  margin-top: -($form-input-line-height / 2);
+  float: left;
+  transition: background .4s ease-out, transform .4s ease-out;
+  
+  &--error{
+      background: $form-input-color-active;
+  }
+
+  &--left {
+    transform-origin: left center;
+  }
+
+  &--center {
+    transform-origin: center;
+  }
+
+  &--right {
+    transform-origin: right center;
+  }
+}
+
+* ~ .form-input-line {
+  transform:scale(0,1);
+  transform:scale3d(0,1,1);
+  transition: background .4s ease-out, transform .4s ease-out;
+}
+
+*:focus ~ .form-input-line,
+*:active ~ .form-input-line,
+.form-input-line--active {
+  transform:scale(1,1);
+  transform:scale3d(1,1,1);
+}

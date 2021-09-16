@@ -1,0 +1,11 @@
+.horse-big-section {
+  position: relative;
+  background: #00273A;
+  z-index: 2;
+
+  @media (min-width: $screen-md) {
+    min-height: 100%;
+    flex: 1;
+    padding-right: 30px;
+  }
+}

@@ -1,0 +1,107 @@
+$snow: #f9f9f9;
+$isabelline: #eaeaea;
+$gainsboro: #dedede;
+$x11-gray: #bebebe;
+$taupe-gray: #8a8a8a;
+$old-silver: #828282;
+$nickel: #6e6e6e;
+$davys-gray: #58595b;
+
+$vanilla-ice: #f18a9b;
+$pale-violet-red: #dc778d;
+$cinnamon-satin: #c3617b;
+
+$raspberry-glace: #906279;
+$raspberry-glace-2: #885872;
+$twilight-lavender: #8d4772;
+$lavender-gray: #C6C8C9;
+
+$space-cadet: #233654;
+$yankees-blue: #142339;
+$eerie-black: #0d1a26;
+
+$black: #000;
+$white: #fff;
+$blue: #2D87BD;
+$ash-grey: #b2b4b6;
+$ruddy-pink: #F08496;
+$raisin-black: #231f20;
+$maastricht-blue: #00273a;
+$silver-chalice: #ababab;
+$outer-space: #494949;
+$dark-imperial-blue: #004370;
+$blue-yonder: #5170A7;
+$sky-blue: #88d0ed;
+$queen-blue: #476591;
+$light-gray: #D0D2D3;
+
+// Bg
+$color-bg: $snow;
+$color-bg-secondary: $white;
+$color-popup-bg: $white;
+$color-faded-popup-bg: rgba($white, 0.4);
+$color-light-popup-bg: rgba($white, 0.96);
+$color-bg-strong: $maastricht-blue;
+$color-bg-dark: darken($maastricht-blue, 2%);
+$color-bg-faded-dark: rgba($black, 0.05);
+$color-bg-primary-dark: rgba($black, 0.82);
+$color-bg-placeholder: $light-gray;
+$color-bg-holo-dark: rgba($raisin-black, 0.5);
+$color-bg-bank-detail: #f2f2f2;
+$color-bg-invoice-archive: #f6f6f6;
+$color-bg-view-link-header: #fbfbfb;
+
+// Overlay
+$color-parallax-image: rgba($white, 0.4);
+
+// Buttons
+$button-cta: $vanilla-ice;
+$button-secondary-cta: $white;
+$button-cta-strong: $raisin-black;
+
+// Inputs
+$form-input-color: $nickel;
+$form-input-color-active: $vanilla-ice;
+$placeholder-color: $taupe-gray;
+
+// Cta
+$cta-link-color: $vanilla-ice;
+$cta-link-color-light: $white;
+$cta-link-strong: $maastricht-blue;
+
+// Icon CTA
+$icon-cta-close: $vanilla-ice;
+$icon-cta-light: $white;
+
+// Social
+$color-twitter: $sky-blue;
+$color-facebook: $blue-yonder;
+$color-linked-in: $queen-blue;
+
+// loader
+$color-loader: $vanilla-ice;
+$color-small-loader: $white;
+
+// Burger menu
+$color-menu-primary: $davys-gray;
+$color-menu-secondary: $vanilla-ice;
+
+// texts
+$color-text-strong: $yankees-blue;
+$color-text-heading: $maastricht-blue;
+$color-text-heading-strong: $davys-gray;
+$color-text-heading-dark: $yankees-blue;
+$color-text-heading-bold: $raisin-black;
+$color-text-faded: $x11-gray;
+$color-text-faded-dark: $taupe-gray;
+$color-text-light: $white;
+$color-text-bold: $ash-grey;
+$color-text-inform: #b1b5be;
+
+// Seperators
+$color-seperator-primary: $vanilla-ice;
+$color-seperator-light: $white;
+$color-seperator-dark: $black;
+$color-seperator-strong: $dark-imperial-blue;
+$color-seperator-weak: $taupe-gray;
+$color-seperator-secondary: $lavender-gray;

@@ -1,0 +1,84 @@
+.register-syndicate-colours {
+
+  .register-syndicate-colours_section {
+    .register-syndicate-colours-content {
+
+      .left {
+        .colours-description {
+          margin: 35px 0;
+          h2 {
+            color: $yankees-blue;
+          }
+          p {
+            color: $yankees-blue;
+            font-weight: 400;
+          }
+        }
+
+        .colours-content {
+          .section {
+            margin-bottom: 20px;
+            .title {
+              margin: 0 0 20px 0;
+              font-weight: 500;
+              h2 {
+                color: $yankees-blue;
+              }
+            }
+            .sort-select {
+              .sort-select__middle {
+                padding: 0;
+                margin-bottom: 12px;
+              }
+              .sort-select__right {
+                position: absolute;
+                right: 7px;
+                top: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+
+      }
+
+      .colours-footer {
+        text-align: center;
+        padding: 40px 0;
+        .colours-submit-button {
+          button {
+            width: auto;
+            padding: 3px 70px;
+          }
+          .btn-comment {
+            color: $vanilla-ice;
+            margin-top: 20px;
+            margin-bottom: 35px;
+            font-style: italic;
+          }
+          .comment {
+            margin: 30px 0 25px;
+            font-size: 14px;
+            span {
+              color: #ccc;
+            }
+          }
+        }
+
+        .footer-image {
+          span {
+            font-size: 14px;
+            color: #ccc;
+          }
+          img {
+            width: 145px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+}

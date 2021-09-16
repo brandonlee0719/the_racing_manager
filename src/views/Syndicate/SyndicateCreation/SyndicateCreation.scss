@@ -1,0 +1,28 @@
+.create-new-syndicate {
+  .copy-section {
+    padding-bottom: 0;
+  }
+
+  p.header-section {
+    font-weight: 600;
+    color: $yankees-blue;
+  }
+
+  p.content-section {
+    font-weight: 400;
+    color: $yankees-blue;
+  }
+
+  button.syndicate-creation__more-btn {
+    display: inline-block;
+  }
+
+  .syndicate-creation__more-btn.fluid-btn {
+    background-color: $vanilla-ice;
+    margin-right: 20px;
+
+    h6 {
+      color: $white;
+    }
+  }
+}

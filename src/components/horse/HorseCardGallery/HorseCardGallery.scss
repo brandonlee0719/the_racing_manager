@@ -1,0 +1,24 @@
+.horse-card-gallery {
+  position: relative;
+  width: 100%;
+  // padding-top: 20px;
+  text-align: center;
+  @include clearfix();
+
+  &__item {
+    position: relative;
+    padding: 20px 0;
+
+    @media all and (min-width: $screen-xs-min) {
+      padding: 0 20px 40px 0px;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__card {
+    display: inline-block;
+  }
+}

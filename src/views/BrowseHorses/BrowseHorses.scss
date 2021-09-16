@@ -1,0 +1,16 @@
+.browse-horses {
+  position: relative;
+  width: 100%;
+
+  &__grid {
+    margin-top: 40px;
+    
+    @media all and (max-width: $screen-xs) {
+      width: 100%;
+    }
+  }
+
+  .row-sm {
+    display: flex;
+  }
+}

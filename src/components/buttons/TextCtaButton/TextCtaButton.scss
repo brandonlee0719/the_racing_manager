@@ -1,0 +1,18 @@
+.text-cta-button {
+  position: relative;
+  color: $vanilla-ice;
+  opacity: 0.5;
+  cursor: pointer;
+  
+  &--gray {
+    color: $davys-gray;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+}

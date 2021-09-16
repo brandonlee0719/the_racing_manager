@@ -1,0 +1,68 @@
+.table {
+  overflow-x: scroll;
+
+  &__el {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+  }
+
+  &__head {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #00273A;
+    &__left {
+      text-align: left;
+      th {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  &__body {
+
+  }
+
+  &__row,
+  &__cell {
+    position: relative;
+    padding-left: 13px;
+    a {
+      color: white;
+    }
+    .text-button {
+      position: absolute;
+      right: 0;
+      border: none;
+
+      h6 {
+        text-align: right;
+        font-style: italic;
+      }
+    }
+  }
+
+  &__row {
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+
+    ~ .table__row {
+      border-top: 1px solid #B2B4B5;
+    }
+  }
+
+  &__row-normal {
+    transition: .3s background ease-out;
+
+    &:hover {
+      background: #f6f6f6;
+    }
+  }
+
+  &__cell {
+    //min-width: 80px;
+  }
+}

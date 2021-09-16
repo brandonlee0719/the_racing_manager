@@ -1,0 +1,55 @@
+.horse-statistics {
+  position: relative;
+
+  &__section {
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+
+    &:last-child {
+      margin-bottom: 60px;
+    }
+
+    .loadMore-btn {
+      width: 100%;
+
+      button {
+        display: block;
+        margin: 25px auto;
+        padding: 10px 50px;
+        font-size: 13px;
+        color: #dc919b;
+        background-color: #fff;
+        border: 1px solid #dc919b;
+        cursor: pointer;
+      }
+    }
+
+    .result_table {
+      tr.table__row-normal {
+        td:first-child {
+          font-weight: 600;
+        }
+      }
+      td.comment-td {
+        border-bottom: 1px solid #B2B4B5;
+
+        .comment-content {
+          border-top: 1px dotted #B2B4B5;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  button.back-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 59px;
+    background-color: #fff;
+    font-size: 13px;
+    color: #df97a1;
+    border: 1px solid#df97a1;
+    cursor: pointer;
+  }
+}

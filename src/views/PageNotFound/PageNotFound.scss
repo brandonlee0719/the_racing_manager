@@ -1,0 +1,26 @@
+.page-not-found {
+  padding: 100px 0;
+
+  &__main-title {
+  }
+
+  &__title {
+    margin-top: 15px;
+  }
+
+  &__paragraph {
+    margin-top: 35px;
+  }
+
+  &__button {
+    margin-top: 40px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 200px;
+    }
+  }
+
+  &__image {
+    height: 416px;
+  }
+}

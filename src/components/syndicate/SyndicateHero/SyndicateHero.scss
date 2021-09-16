@@ -1,0 +1,56 @@
+.syndicate-hero {
+  position: relative;
+  background: $color-bg;
+
+  .parallax-hero__image {
+    height: calc(100vh - 100px);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-width: $screen-sm) {
+      height: 500px;
+    }
+
+    @media (min-width: $screen-md) {
+      height: 550px;
+    }
+  }
+
+
+  &__logo {
+    width: 300px;
+    min-height: 190px;
+    background: $color-bg-secondary;
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 20%);
+    left: calc(50% - 150px);
+
+    @media (min-width: $screen-md) {
+      width: 360px;
+      left: calc(50% - 180px);
+    }
+  }
+
+  &__logo-img {
+    min-height: 125px;
+    position: relative;
+  }
+
+  &__logo-element {
+    width: 130px;
+    height: 80px;
+  }
+
+  &__logo-title {
+    color: $color-text-heading-strong;
+    width: 100%;
+    @include truncate();
+  }
+
+  &__logo-desc {
+    color: $color-text-heading-strong;
+    text-transform: uppercase;
+    padding: 15px 0;
+  }
+}

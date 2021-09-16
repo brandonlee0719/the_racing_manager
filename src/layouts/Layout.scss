@@ -1,0 +1,9 @@
+.main-layout {
+
+}
+
+.content {
+  // Position footer correctly when site content is smaller than screen height
+  min-height: calc(100vh - #{$footer-height} - #{$header-height});
+  margin-top: $header-height;
+}

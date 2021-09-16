@@ -1,0 +1,41 @@
+input,
+select{
+  border:0;
+  border-radius: 0;
+  padding:0;
+  -webkit-appearance: none;
+  background-color: transparent;
+
+  &:focus,
+  &:active{
+    outline: none;
+  }
+}
+
+textarea {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  padding: 0;
+  font-size: $text-xs;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  
+  // IE Fix
+  &::-ms-expand { 
+      display: none; /* remove default arrow on ie10 and ie11 */
+  }
+
+  &:focus,
+  &:active{
+    outline: none;
+  }
+}

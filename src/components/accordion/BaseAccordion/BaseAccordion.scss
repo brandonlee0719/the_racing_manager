@@ -1,0 +1,14 @@
+.accordion {
+  width: 100%;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+    padding-top: 5px;
+    @include clearfix();
+  }
+
+  &--anim {
+    transition: height .4s cubic-bezier(.25,.1,.25,1);
+  }
+}

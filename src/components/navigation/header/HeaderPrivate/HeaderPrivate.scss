@@ -1,0 +1,11 @@
+.header-private {
+  &__link {
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: middle;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

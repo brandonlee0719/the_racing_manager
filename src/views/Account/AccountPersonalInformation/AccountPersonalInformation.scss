@@ -1,0 +1,15 @@
+.account-personal-information {
+  position: relative;
+  width: 100%;
+
+  &__container {
+    position: relative;
+    @include clearfix();
+  }
+
+  &__section {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

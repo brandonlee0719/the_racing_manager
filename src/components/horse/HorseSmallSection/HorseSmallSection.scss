@@ -1,0 +1,9 @@
+.horse-small-section {
+  position: relative;
+  z-index: 1;
+  background: darken(#00273A, 2%);
+
+  @media (min-width: $screen-md) {
+    padding-left: 30px;
+  }
+}

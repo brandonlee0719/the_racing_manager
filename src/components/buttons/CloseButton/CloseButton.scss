@@ -1,0 +1,9 @@
+.close-button {
+  width: 40px;
+  height: 40px;
+  background-color: $button-secondary-cta;
+
+  &__icon:before {
+    color: $button-cta;
+  }
+}

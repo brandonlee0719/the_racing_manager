@@ -1,0 +1,23 @@
+.existing-syndicate {
+  h2.uppercase {
+    color: $yankees-blue;
+  }
+  .underline {
+    border-bottom: 2px solid $vanilla-ice;
+    width: 30%;
+    margin-top: 20px;
+  }
+  .small-group {
+    margin-top: 26px;
+    p {
+      color: $yankees-blue;
+    }
+    span {
+      font-style: italic;
+      color: $yankees-blue;
+    }
+  }
+  .existing-syndicate-btn {
+    margin-top: 26px;
+  }
+}

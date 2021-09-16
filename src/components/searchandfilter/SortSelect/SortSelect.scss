@@ -1,0 +1,41 @@
+.sort-select {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__left {
+    position: relative;
+
+    h6 {
+      font-weight: 400;
+      margin-top: -2px;
+    }
+  }
+
+  &__middle {
+    position: relative;
+    width: 100%;
+
+    @media all and (min-width: $screen-sm-min) {
+      padding: 0 20px;
+    }
+  }
+
+  &__right {
+    margin-top: -2px;
+  }
+
+  &__select-input {
+    @media all and (max-width: $screen-xs) {
+      border: 0;
+      width: auto;
+    }
+  }
+
+  &__dropdown-icon {
+    position: relative;
+    font-size: 10px;
+  }
+}

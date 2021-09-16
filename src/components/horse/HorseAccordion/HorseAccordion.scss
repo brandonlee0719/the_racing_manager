@@ -1,0 +1,87 @@
+.horse-accordion {
+  $icon-a: 14px;
+  $icon-b: 3px;
+  $icon-pos: 6px;
+  $icon-rot: 90deg;
+
+  $header-h: 50px;
+
+  border-bottom: 2px solid white;
+
+  &__header {
+    cursor: pointer;
+    height: $header-h;
+    background: #E9E9E9;
+    position: relative;
+    user-select: none;
+    transition: .3s ease-out background;
+
+    &:hover {
+      background: darken(#E9E9E9, 10%);
+    }
+  }
+
+  &__head-content {
+    position: relative;
+  }
+
+  &__icon {
+    left: 15px;
+
+    @media (min-width: $screen-md) {
+      left: 0;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #F3889A;
+    }
+
+    &::before {
+      width: $icon-a;
+      height: $icon-b;
+    }
+
+    &::after {
+      will-change: opacity;
+      width: $icon-b;
+      height: $icon-a;
+      left: $icon-pos;
+      top: -$icon-pos;
+      transition: .2s ease-out opacity,
+                  .3s ease-in transform;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: $header-h;
+    color: #00273A;
+    padding-left: 35px;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-md) {
+      padding-left: 20px;
+    }
+  }
+
+  &--open {
+    .horse-accordion {
+      &__header {
+        background: darken(#E9E9E9, 5%);
+      }
+
+      &__icon {
+        &::after {
+          transform: rotate($icon-rot);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

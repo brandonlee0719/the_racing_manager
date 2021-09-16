@@ -1,0 +1,37 @@
+.tile-social-share {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: $color-bg-secondary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social-icons {
+    position: relative;
+    margin: 0 10px;
+  }
+
+  &__close {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__close-icon {
+    font-size: 14px;
+
+    &:before {
+      color: $icon-cta-close;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.public-horse {
+
+  &__section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  &__members-section {
+    position: relative;
+    z-index: 2;
+
+    @media all and (max-width: $screen-md) {
+      margin-top: 80px;
+      margin-bottom: 40px;
+    }
+
+    @media all and (min-width: $screen-md-min) {
+      margin-top: -75px;
+      margin-bottom: 40px;
+    }
+  }
+
+// Footer ---------------------------------------
+  &__footer-section {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.75) 0 20px 37px -37px inset;
+      
+      @media (min-width: $screen-sm) {
+        width: 50%;
+        height: 100%;
+      }
+    }
+  }
+  &__involvement-section,
+  &__horse-section {
+    min-height: 700px;
+  }
+
+  &__involvement-section {
+    padding: 45px 0 50px;
+
+    p, ul {
+      color: #00273A;
+    }
+
+    @media (min-width: $screen-sm) {
+      padding-right: 30px;
+    }
+  }
+
+  &__benefits-description {
+    font-weight: 300;
+  }
+
+  &__benefits-list {
+    margin-top: 10px;
+  }
+
+  &__updates-info {
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+  &__availability-section {
+    margin-top: 25px;
+  }
+
+  &__join-button {
+    min-width: 265px;
+    margin-top: 30px;
+  }
+
+  &__horse-section {
+    position: relative;
+    flex: 1;
+  }
+
+  &__horse-card {
+    position: absolute;
+    min-width: 300px;
+  }
+}

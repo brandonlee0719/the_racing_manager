@@ -1,0 +1,32 @@
+.feed-comment {
+  $mBottom: 12px;
+  $mBottomLast: 18px;
+
+  position: relative;
+  width: 100%;
+
+  &__header {
+    position: relative;
+    width: 100%;
+    margin-bottom: $mBottom;
+  }
+
+  &__body {
+    position: relative;
+    width: 100%;
+    margin-bottom: $mBottomLast;
+    padding-right: 40px;
+    padding-left: 10px;
+  }
+
+  &__text {
+    position: relative;
+    color: $color-text-strong;
+  }
+
+  &__footer {
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+  }
+}

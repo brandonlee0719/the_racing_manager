@@ -1,0 +1,13 @@
+.horse-details-card {
+  position: relative;
+  width: 100%;
+  min-width: 400px;
+  background: $color-bg-secondary;
+
+  &__section {
+    position: relative;
+    width: 100%;
+    padding: 20px 40px;
+    @include clearfix();
+  }
+}
